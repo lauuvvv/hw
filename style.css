@@ -1,156 +1,194 @@
-* {
+*{
+    
+}
+body {
+    width: 1280px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Verdana, Arial, sans-serif;
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-body {
-    font-family: 'Arial', sans-serif;
-    width: 1280px; 
-    margin: 0 auto; 
+.milanhead a {
+    color: white;
+    display: block;
+    float: left;
+    clear: left;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-header {
-    max-width: 1280px; 
-    margin: 0 auto; 
+.textgroup {
+    margin-left: 215px;
+    margin-top: 50px;
 }
 
-header .textRamda {
-    display: inline-block;
-    font-size: 80px;
-    margin-left: -40px; 
-    margin-top: 80px;
+.milantext {
+    display: block;
+    font-size: 29px;
 }
 
-header .textRamda a {
-    text-decoration: none; 
+.holidaystext {
+    display: block;
+    font-size: 18px;
 }
 
-.startWord {
-    color: rgb(0, 0, 0);
+.icon img {
+    position: relative;
+    top: -43px;
+    margin-left: 163px; 
+    width: 45px;
 }
 
-.restWord {
-    color: rgb(75, 205, 255);
+.milanhead:hover a {
+    color: rgb(242, 101, 34);
 }
 
-.menu {
-    list-style: none;
-    padding: 80px 0;
+.milanhead:hover .icon img {
+    content: url('newsymbol.png'); 
+}
+
+.information p {
+    color: white;
+    float: right;
+    clear: right;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: -100px;
+}
+
+.firstinfo{
+    margin-top: -42px;
+}
+
+.secondinfo {
+    margin-top: -20px; 
+}
+.Gallery {
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: -251px;
+    max-width: 1370px;
+    line-height: 2;
+    clear: both;
+    position: relative;
+}
+
+.Gallery img {
+    border: 2px solid;
+    border-image: linear-gradient(white, black) 1; 
+    width: 100%;
+    height: auto;
+}
+
+.Gallery .row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.Gallery .row a {
+    position: relative;
+    width: 310px;
+    margin-bottom: 35px;
+    margin-right: 145px;
     text-align: center;
-    white-space: nowrap;
-    position: relative;
-}
-
-.menu::before {
-    content: "";
-    position: absolute;
-    top: 50px;
-    left: -35px;
-    right: -35px; 
-    width: auto; 
-    height: 80px;
-    background-color: rgb(53, 68, 79);
-    z-index: -1;
-}
-
-.menu a {
-    font-size: 24px;
-    color: rgb(238, 248, 255);
     text-decoration: none;
-    margin-right: 80px;
+    float: left; 
+    color: white;
 }
 
-.secondmenu {
-    border: 2px solid grey; 
-    width: 350px;
-    margin-left: -35px;
-    padding-left: 45px;
-}
-
-.secondmenu nav a {
-    text-decoration: none; 
-}
-
-.secondmenu a{
-    color: rgb(73,88,99);
-    font-size: 28px;
-    line-height: 80px;
-}
-
-.secondmenu a:hover{
-    color: black;
-    padding-left: 35px;
-    transition: padding-left 1.5s ease;
-}
-
-.imageed {
-    position: relative;
-    width: 500px;
-    height: 300px; 
-}
-
-.imageed img {
+.Gallery .row .main {
+    visibility: hidden;
+    width: 0;
+    height: 55px;
+    color: rgb(242, 101, 34);
+    opacity: 0;
+    padding: 7px 37px 12px 16px;
+    background-color: rgb(242, 101, 34);
+    justify-content: space-between;
+    align-items: end;
+    box-sizing: border-box;
     position: absolute;
-    bottom: 175px;
-    left: 430px; 
+    bottom: 17%;
+    transition: 3s;
 }
 
-p.textone {
-    color:rgb(33,33,33);
-    margin-left: 37%;
-    line-height: 1.5;
-    margin-top: -10%;
-    margin-bottom: 20px;
+.Gallery .row a:hover .main {
+    visibility: visible;
+    width: 101%;
+    height: 55px;
+    padding: 7px 37px 12px 16px;
+    opacity: 1;
+    transition: 0.4s;
+    color: white;
 }
 
-p.texttwo {
-    color:rgb(44,44,44);
-    margin-left: 37%;
-    line-height: 1.5;
+.Gallery .row a:hover {
+    color: rgb(242, 101, 34);
 }
 
-.thirdmenu {
-    list-style: none;
-    padding: 80px 0;
+.Gallery .row a img {
+    width: 100%;
+    height: auto;
+}
+
+.Gallery .row a:last-child {    
+    margin-right: 0;
+}
+.block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .fromtext{
     text-align: left;
-    white-space: nowrap;
+    font-size: 10px;
+    line-height: 10px;
+  }
+  
+  .eurotext {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  .detailstext {
+    font-size: 14px;
+    line-height: 14px;
     position: relative;
+  }
+  
+  .detailstext::after {
+    content: '\003E';
     display: inline-block;
-}
-
-.thirdmenu::before {
-    content: "";
+    width: 5px;
+    height: 10px;
+    margin-left: 16px;
     position: absolute;
-    top: 50px;
-    left: -35px;
-    right: -35px; 
-    width: auto; 
-    height: 80px;
-    background-color: rgb(180, 183, 186);
-    z-index: -1;
+    right: -16px;
+    bottom: 50%;
+    transform: translate(100%, 50%);
+  }  
+
+.footertext{
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 265px;
 }
-
-.thirdmenu a {
-    font-size: 28px;
-    color: rgb(12, 25, 39);
-    text-decoration: none;
-    margin-right: 30px;
-}
-
-.thirdmenu a:hover {
-    color: rgb(49,129,166);
-    text-decoration: underline;
-}
-
-.thirdmenu span {
-    font-size: 28px;
-    color: rgb(12, 25, 39);
-    margin-left: 125px; 
-}
-
-
-
-
-
-
